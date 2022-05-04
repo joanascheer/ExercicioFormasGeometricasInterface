@@ -18,6 +18,12 @@ class Triangulo(override var base: Double = 0.0, override var altura: Double = 0
         return area
     }
 
+    override fun calculaPerimetro(): Double {
+        val perimetro = base * 3
+        println("O perímetro do triângulo equilátero é $perimetro")
+        return perimetro
+    }
+
     override fun mostraArea(area: Double) {
         println("A área do triângulo é $area!\n")
     }

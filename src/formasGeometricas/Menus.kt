@@ -6,14 +6,14 @@ class Menus {
 
     init {
         println("*** Seja bem vindo(a) a ***\n" +
-                "CALCULADORA DE ÁREA BALEIA\n")
+                "CALCULADORA DE FORMAS BALEIA\n")
 
         menuPrincipal()
 
     }
 
     private fun menuPrincipal() {
-        println("Escolha uma forma para calcular:\n" +
+        println("Escolha uma forma para calcular área e perímetro:\n" +
                 "1 - Quadrado\n" +
                 "2 - Retângulo\n" +
                 "3 - Triângulo\n" +
@@ -23,24 +23,28 @@ class Menus {
             "1" -> {
                 val quadrado = Quadrado().criaObjQuadrado()
                 quadrado.calculaArea(quadrado)
+                quadrado.calculaPerimetro()
                 sucesso()
                 menuPrincipal()
             }
             "2" -> {
                 val retangulo = Retangulo().criaObjRetangulo()
                 retangulo.calculaArea(retangulo)
+                retangulo.calculaPerimetro()
                 sucesso()
                 menuPrincipal()
             }
             "3" -> {
                 val triangulo = Triangulo().criaObjTriangulo()
                 triangulo.calculaArea(triangulo)
+                triangulo.calculaPerimetro()
                 sucesso()
                 menuPrincipal()
             }
             "4" -> {
                 val losango = Losango().criaObjLosango()
                 losango.calculaArea(losango)
+                losango.calculaPerimetro()
                 sucesso()
                 menuPrincipal()
             }

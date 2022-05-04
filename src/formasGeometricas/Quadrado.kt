@@ -2,6 +2,7 @@ package formasGeometricas
 
 class Quadrado(override var base: Double = 0.0, override var altura: Double = 0.0) : Forma {
 
+
     fun criaObjQuadrado(): Quadrado {
         println("Qual o tamanho da base do seu quadrado?")
         val base = readln().toDouble()
@@ -16,6 +17,18 @@ class Quadrado(override var base: Double = 0.0, override var altura: Double = 0.
         val area = base * altura
         mostraArea(area)
         return area
+    }
+
+    fun pegaLadosQuadrado() {
+        for (i in 1..4) {
+
+        }
+    }
+
+    override fun calculaPerimetro(): Double {
+        val perimetro = base * 4
+        println("O perímetro do quadrado é $perimetro")
+        return perimetro
     }
 
     override fun mostraArea(area: Double) {

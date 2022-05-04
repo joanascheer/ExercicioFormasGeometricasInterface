@@ -18,6 +18,12 @@ class Losango(override var base: Double = 0.0, override var altura: Double = 0.0
         return area
     }
 
+    override fun calculaPerimetro(): Double {
+        val perimetro = base * 4
+        println("O perímetro do losango é $perimetro")
+        return perimetro
+    }
+
     override fun mostraArea(area: Double) {
         println("A área do losango é $area!\n")
     }

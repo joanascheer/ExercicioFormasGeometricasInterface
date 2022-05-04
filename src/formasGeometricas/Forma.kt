@@ -7,5 +7,7 @@ interface Forma {
 
     abstract fun calculaArea(forma: Forma) : Double
 
+    abstract fun calculaPerimetro() : Double
+
     abstract fun mostraArea(area: Double)
 }

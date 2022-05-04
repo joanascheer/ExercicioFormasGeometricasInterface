@@ -18,6 +18,12 @@ class Retangulo (override var base: Double = 0.0, override var altura: Double = 
         return area
     }
 
+    override fun calculaPerimetro(): Double {
+        val perimetro = (base * 2) + (altura * 2)
+        println("O perímetro do retângulo é $perimetro")
+        return perimetro
+    }
+
     override fun mostraArea(area: Double) {
         println("A área do retângulo é $area!\n")
     }
