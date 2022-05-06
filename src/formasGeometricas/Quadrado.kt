@@ -19,12 +19,6 @@ class Quadrado(override var base: Double = 0.0, override var altura: Double = 0.
         return area
     }
 
-    fun pegaLadosQuadrado() {
-        for (i in 1..4) {
-
-        }
-    }
-
     override fun calculaPerimetro(): Double {
         val perimetro = base * 4
         println("O perímetro do quadrado é $perimetro")
